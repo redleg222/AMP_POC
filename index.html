@@ -24,8 +24,6 @@
         font-style: italic;
         font-size: 2.875em;
         line-height: 1.174;
-          
-          
       }
       p {
         font-family: Arial;
@@ -81,10 +79,15 @@
         </amp-story-page>
         <amp-story-page id="page_00">
             <amp-story-grid-layer template="fill">
-                <amp-img src="assets/page_00_img.png"
-                    width="720" height="1280" 
-                    layout="responsive">
-                </amp-img>
+                    <amp-video autoplay loop
+                        width="720" height="1280"
+                        poster="assets/page_01.png"
+                        layout="responsive">
+                        <source src="assets/page_01.mp4" type="video/mp4">
+                        <div fallback>
+                            <p>This browser does not support the video element.</p>
+                        </div>
+                    </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="fill">
                 <amp-img animate-in="fade-in" 
